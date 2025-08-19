@@ -1,0 +1,15 @@
+name: 深圳天气
+desc: 显示深圳实时天气
+tiles:
+  - name: 深圳天气
+    type: text
+    text: "{{weather}}"
+    icon: cloud.sun
+    style:
+      width: 5
+      height: 1
+    fetch:
+      url: "https://wttr.in/Shenzhen?format=3&0T"
+      method: GET
+      parse: "text"
+      variable: "weather"
