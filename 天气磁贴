@@ -1,15 +1,8 @@
-name: 深圳天气
-desc: 显示深圳实时天气
 tiles:
-  - name: 深圳天气
-    type: text
-    text: "{{weather}}"
-    icon: cloud.sun
-    style:
-      width: 5
-      height: 1
-    fetch:
-      url: "https://wttr.in/Shenzhen?format=3&0T"
-      method: GET
-      parse: "text"
-      variable: "weather"
+  - name: tianqi
+    icon: 'sun.max.fill'
+    backgroundColor: '#ffc400'
+    argument: 'cityId=101280601'
+script-providers:
+  tianqi:
+    url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/tianqi.js
